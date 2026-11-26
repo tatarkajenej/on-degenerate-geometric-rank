@@ -1,4 +1,4 @@
-This is an implementation of a rank (un)liftability criterion to accompanying the article "On degenerate geometric rank" (M. Doležálek, P. Pielasa, D. Wu, [arXiv:2607.18898](https://arxiv.org/abs/2607.18898)).
+This is an implementation of a rank (un)liftability criterion accompanying the article "On degenerate geometric rank" (M. Doležálek, P. Pielasa, D. Wu, [arXiv:2607.18898](https://arxiv.org/abs/2607.18898)).
 
 This work has been supported by European Union’s HORIZON–MSCA-2023-DN-JD programme under 
 the Horizon Europe (HORIZON) Marie Skłodowska-Curie Actions, grant agreement 101120296 ([TENORS](https://github.com/tenors-network)).
@@ -10,9 +10,11 @@ To run it, open an interactive Sage console and use `load("main.sage")`. This lo
 
 Note that the implementation of the rank (un)liftability criterion only works under some technical constraints: we work over the rational numbers, and we assume that the rank locus in question is irrational and is not entirely contained in a smaller rank locus, so as to contain smooth points of the corresponding secant variety. Lastly, an auxiliary function generating (random) rational points in the rank locus, which we call a "factory", is required -- by default we provide a basic factory to cover the following cases:
 
-a. the rank locus is the whole space;
-b. the rank locus is a hypersurface whose equation is linear in one of the variables;
-c. the rank locus is cut out by several coordinate subspaces (vanishing variables) and one equation of the type b.
+<ol type="A">
+<li>the rank locus is the whole space;</li>
+<li>the rank locus is a hypersurface whose equation is linear in one of the variables;</li>
+<li>the rank locus is cut out by several coordinate subspaces (vanishing variables) and one equation of the type B.</li>
+</ol>
 
 Note that this is enough to cover the examples we refer to in the article. For anything else, the user needs to construct a suitable factory on their own.
 
